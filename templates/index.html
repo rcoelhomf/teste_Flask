@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Flask</title>
+</head>
+<body>
+    <h1>Digite um número</h1>
+    <form action="/double" method="POST">
+        <label for="number">Número:</label>
+        <input type="number" name="number">
+        <button type="submit">submit</button>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form action="/reset">
+        <span>{{ result }}</span>
+        <br>
+        <br>
+        <br>
+        <button type="submit">reset</button>
+    </form>
+</body>
+</html>
